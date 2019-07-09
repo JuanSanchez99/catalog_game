@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Integración con los scripts, tanto la libreria como toda la lógica del juego -->
+    <title>Head Game</title>
+</head>
+<body>
+    <script src="{{ url_for('static', filename='scripts/head_game/kiwi.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/head_game/headGame.js') }}"></script>
+    <script>
+        globals = {
+            'jugador1': '{{ url_for("static", filename="images/head_game/jugador1.png") }}',
+            'background': '{{ url_for("static", filename="images/head_game/estadio.jpg") }}',
+            'piso': '{{ url_for("static", filename="images/head_game/grass.png") }}',
+            'arco1': '{{ url_for("static", filename="images/head_game/goal_2.png") }}',
+            'arco2': '{{ url_for("static", filename="images/head_game/goal_1.png") }}',
+            'balon': '{{ url_for("static", filename="images/head_game/ball1.png") }}'
+
+        }
+    </script>
+</body>
+</html>
